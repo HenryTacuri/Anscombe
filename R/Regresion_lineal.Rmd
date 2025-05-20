@@ -1,0 +1,54 @@
+---
+title: "Regresión lineal"
+author: "Henry Tacuri"
+date: "2025-05-20"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Cargamos las librerías necesarias
+
+```{r}
+library(tidyverse)
+library(datasauRus)
+library(dplyr)
+library(ggplot2)
+```
+
+## Cálculo visual de la regresión lineal de bullseye
+
+
+```{r mostrar-imagen, echo=FALSE, out.width="50%"}
+knitr::include_graphics("regresion_lineal.jpg")
+```
+
+
+## Filtramos el dataset bullseye
+```{r}
+bullseye_data <- datasaurus_dozen %>% filter(dataset == "bullseye")
+```
+
+## Aplicamos la regresión lineal con lm()
+```{r}
+modelo_bullseye <- lm(y ~ x, data = bullseye_data)
+```
+
+## Mostramos el resumen del modelo
+```{r}
+summary(modelo_bullseye)
+```
+## Visualizamos la regresión lineal con ggplot2
+```{r}
+ggplot(bullseye_data, aes(x = x, y = y)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Regresion lineal sobre bullseye",
+       x = "x",
+       y = "y")
+```
+
