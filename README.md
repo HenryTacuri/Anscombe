@@ -4,6 +4,8 @@
 ### **Periodo:** 2025 - 2025
 ### **Estudiante:** Henry Tacuri
 
+---
+
 # **Introducción teórica al Cuarteto de Anscombe**
 
 El **Cuarteto de Anscombe** es un conjunto de cuatro conjuntos de datos diseñados por el estadístico **Francis Anscombe** en 1973 para ilustrar la importancia de la visualización de datos y el análisis gráfico en estadística. A pesar de que los cuatro conjuntos comparten estadísticas descriptivas casi idénticas como la media, la varianza, la correlación y la línea de regresión lineal, cada uno tiene una distribución de datos gráficamente muy diferente. Esta paradoja estadística destaca cómo los resúmenes numéricos pueden ocultar patrones y anomalías importantes si no se complementan con visualizaciones adecuadas.
